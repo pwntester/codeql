@@ -66,7 +66,10 @@ private class StringSummaryCsv extends SummaryModelCsv {
         "java.lang;CharSequence;true;subSequence;;;Argument[-1];ReturnValue;taint;manual",
         "java.lang;CharSequence;true;toString;;;Argument[-1];ReturnValue;taint;manual",
         "java.util;StringJoiner;true;add;;;Argument[0];Argument[-1];taint;manual",
+        "java.util;StringJoiner;true;add;;;Argument[-1];ReturnValue;value;manual",
         "java.util;StringJoiner;true;merge;;;Argument[0];Argument[-1];taint;manual",
+        "java.util;StringJoiner;true;merge;;;Argument[-1];ReturnValue;value;manual",
+        "java.util;StringJoiner;true;setEmptyValue;;;Argument[-1];ReturnValue;value;manual",
         "java.util;StringJoiner;true;toString;;;Argument[-1];ReturnValue;taint;manual"
       ]
   }
